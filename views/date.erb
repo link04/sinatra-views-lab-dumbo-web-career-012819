@@ -1,7 +1,5 @@
 <% @time = Time.new %> 
 
-<h1>The date is <%= @date.wday,  %> </h1>
+<h1>The date is <%= @time.strftime("%A, %B %d, %Y") %> </h1>
 
 <p> </p>
-time.strftime("%A, %B ")     # "Today is Sunday"
-time.strftime("%d of , %Y")    # "21 of December, 2015"
